@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title> ntd-child practice </title> 
+<style> 
+.first-block p:nth-child(odd)
+{
+    color: white;
+	background:#c28585;
+}
+.first-block p:nth-child(even)
+{
+    color: white;
+	background:#5f5f9b;
+}
+.second-block p:nth-child(3n+0)
+{
+    background:#ff0000;
+}
+
+</style>
+</head>
+<body>
+
+<div class="first-block">
+    <h1>First Block</h1>
+    <p>The odd paragraph.</p>
+    <p>The even paragraph.</p>
+    <p>The odd paragraph.</p>
+    <p>The even paragraph</p>
+</div>
+
+<div class="second-block" >
+    <h1>Second Block </h1>
+    <p>使用公式(an+ b): a代表一个循环的大小，N是一个计数器（从0开始），以及b是偏移量。 所有索引是3的倍数的p元素指定了背景颜色</p>
+    <p>The first paragraph.</p>
+    <p>The second paragraph.</p>
+    <p>The third paragraph.</p>
+    <p>The fourth paragraph</p>
+</div>
+<div>
+    <p>The examples of an+b are as follows:
+        :nth-child(2n) /* represents every even element */
+        :nth-child(even) /* same, represents every even element */
+        :nth-child(2n+1) /* represents every odd element */
+        :nth-child(odd) /* same, represents every odd element */
+        :nth-child(10n-1) /* represents the 9th, 19th, 29th, etc, element */</p>
+</div>
+
+</body>
+</html>
